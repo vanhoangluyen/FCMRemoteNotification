@@ -22,6 +22,7 @@
 		56DE3094213635CC00F1424D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56DE3097213635CC00F1424D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56DE3099213635CC00F1424D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01F3BF0215B708D002DE088 /* FCMRemoteNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCMRemoteNotification.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		56DE308C213635CB00F1424D /* FCMRemoteNotification */ = {
 			isa = PBXGroup;
 			children = (
+				E01F3BF0215B708D002DE088 /* FCMRemoteNotification.entitlements */,
 				56DE308D213635CB00F1424D /* AppDelegate.swift */,
 				56DE308F213635CB00F1424D /* ViewController.swift */,
 				56DE3091213635CB00F1424D /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					56DE3089213635CB00F1424D = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -280,7 +287,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FCMRemoteNotification/FCMRemoteNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = FCMRemoteNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,7 +306,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FCMRemoteNotification/FCMRemoteNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = FCMRemoteNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
