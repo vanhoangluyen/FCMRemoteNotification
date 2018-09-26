@@ -7,4 +7,5 @@ target 'FCMRemoteNotification' do
 
   # Pods for FCMRemoteNotification
 pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 end
