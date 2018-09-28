@@ -27,6 +27,7 @@
 		56DE3099213635CC00F1424D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56F727C8DBB98AC183F8DC6F /* Pods_FCMRemoteNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCMRemoteNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E00854AE215DD9BF00283E77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E0BB8131215E08030070ED75 /* FCMRemoteNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FCMRemoteNotification.entitlements; sourceTree = "<group>"; };
 		E511A99E1003AEDD775BEB12 /* Pods-FCMRemoteNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMRemoteNotification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FCMRemoteNotification/Pods-FCMRemoteNotification.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +64,7 @@
 		56DE308C213635CB00F1424D /* FCMRemoteNotification */ = {
 			isa = PBXGroup;
 			children = (
+				E0BB8131215E08030070ED75 /* FCMRemoteNotification.entitlements */,
 				56DE308D213635CB00F1424D /* AppDelegate.swift */,
 				56DE308F213635CB00F1424D /* ViewController.swift */,
 				56DE3091213635CB00F1424D /* Main.storyboard */,
@@ -126,6 +128,11 @@
 					56DE3089213635CB00F1424D = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -355,6 +362,7 @@
 			baseConfigurationReference = E511A99E1003AEDD775BEB12 /* Pods-FCMRemoteNotification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FCMRemoteNotification/FCMRemoteNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = FCMRemoteNotification/Info.plist;
@@ -374,6 +382,7 @@
 			baseConfigurationReference = 0B359A33FB76C52816C54966 /* Pods-FCMRemoteNotification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FCMRemoteNotification/FCMRemoteNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = FCMRemoteNotification/Info.plist;

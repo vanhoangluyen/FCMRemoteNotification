@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>981120284509-t03rlo8q5cs16nlgdc0hhtorhfpf5vbg.apps.googleusercontent.com</string>
+	<string>603787421030-vukgkf8kbit00r53nnnu1p0isjccpa1n.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.981120284509-t03rlo8q5cs16nlgdc0hhtorhfpf5vbg</string>
+	<string>com.googleusercontent.apps.603787421030-vukgkf8kbit00r53nnnu1p0isjccpa1n</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDwb8cxmJn5GEP3K6JA2dzBGyXBsqxaA1s</string>
+	<string>AIzaSyC1j4t6VAoaTQGi-kXNnhoybvy-_a15_P8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>981120284509</string>
+	<string>603787421030</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.Bigzero.FCMNotificationHelper</string>
 	<key>PROJECT_ID</key>
-	<string>fcmnotificationhelper</string>
+	<string>remotenotificationhelper</string>
 	<key>STORAGE_BUCKET</key>
-	<string>fcmnotificationhelper.appspot.com</string>
+	<string>remotenotificationhelper.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:981120284509:ios:1b1ff69289d80f25</string>
+	<string>1:603787421030:ios:1b1ff69289d80f25</string>
 	<key>DATABASE_URL</key>
-	<string>https://fcmnotificationhelper.firebaseio.com</string>
+	<string>https://remotenotificationhelper.firebaseio.com</string>
 </dict>
 </plist>
