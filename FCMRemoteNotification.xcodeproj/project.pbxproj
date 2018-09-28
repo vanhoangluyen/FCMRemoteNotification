@@ -12,9 +12,12 @@
 		56DE3093213635CB00F1424D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE3091213635CB00F1424D /* Main.storyboard */; };
 		56DE3095213635CC00F1424D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DE3094213635CC00F1424D /* Assets.xcassets */; };
 		56DE3098213635CC00F1424D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DE3096213635CC00F1424D /* LaunchScreen.storyboard */; };
+		E00854AF215DD9BF00283E77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E00854AE215DD9BF00283E77 /* GoogleService-Info.plist */; };
+		F0BE1BD9482E5C44AACB851D /* Pods_FCMRemoteNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F727C8DBB98AC183F8DC6F /* Pods_FCMRemoteNotification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B359A33FB76C52816C54966 /* Pods-FCMRemoteNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMRemoteNotification.release.xcconfig"; path = "Pods/Target Support Files/Pods-FCMRemoteNotification/Pods-FCMRemoteNotification.release.xcconfig"; sourceTree = "<group>"; };
 		56DE308A213635CB00F1424D /* FCMRemoteNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCMRemoteNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DE308D213635CB00F1424D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DE308F213635CB00F1424D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		56DE3094213635CC00F1424D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56DE3097213635CC00F1424D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56DE3099213635CC00F1424D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F727C8DBB98AC183F8DC6F /* Pods_FCMRemoteNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FCMRemoteNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00854AE215DD9BF00283E77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E511A99E1003AEDD775BEB12 /* Pods-FCMRemoteNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCMRemoteNotification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FCMRemoteNotification/Pods-FCMRemoteNotification.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0BE1BD9482E5C44AACB851D /* Pods_FCMRemoteNotification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				56DE308C213635CB00F1424D /* FCMRemoteNotification */,
 				56DE308B213635CB00F1424D /* Products */,
+				DF8BA7FDCFC27AEFD26F5E7D /* Pods */,
+				AEBD36081CB587AC9BAF41CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				56DE3094213635CC00F1424D /* Assets.xcassets */,
 				56DE3096213635CC00F1424D /* LaunchScreen.storyboard */,
 				56DE3099213635CC00F1424D /* Info.plist */,
+				E00854AE215DD9BF00283E77 /* GoogleService-Info.plist */,
 			);
 			path = FCMRemoteNotification;
+			sourceTree = "<group>";
+		};
+		AEBD36081CB587AC9BAF41CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56F727C8DBB98AC183F8DC6F /* Pods_FCMRemoteNotification.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF8BA7FDCFC27AEFD26F5E7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E511A99E1003AEDD775BEB12 /* Pods-FCMRemoteNotification.debug.xcconfig */,
+				0B359A33FB76C52816C54966 /* Pods-FCMRemoteNotification.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56DE309C213635CC00F1424D /* Build configuration list for PBXNativeTarget "FCMRemoteNotification" */;
 			buildPhases = (
+				3AE3BE868A70C813CB675AFB /* [CP] Check Pods Manifest.lock */,
 				56DE3086213635CB00F1424D /* Sources */,
 				56DE3087213635CB00F1424D /* Frameworks */,
 				56DE3088213635CB00F1424D /* Resources */,
+				F89421740990EFAD9B5B21C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,7 @@
 				TargetAttributes = {
 					56DE3089213635CB00F1424D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -123,12 +153,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				56DE3098213635CC00F1424D /* LaunchScreen.storyboard in Resources */,
+				E00854AF215DD9BF00283E77 /* GoogleService-Info.plist in Resources */,
 				56DE3095213635CC00F1424D /* Assets.xcassets in Resources */,
 				56DE3093213635CB00F1424D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AE3BE868A70C813CB675AFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FCMRemoteNotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89421740990EFAD9B5B21C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FCMRemoteNotification/Pods-FCMRemoteNotification-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FCMRemoteNotification/Pods-FCMRemoteNotification-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56DE3086213635CB00F1424D /* Sources */ = {
@@ -278,34 +352,38 @@
 		};
 		56DE309D213635CC00F1424D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E511A99E1003AEDD775BEB12 /* Pods-FCMRemoteNotification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = FCMRemoteNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bigzero.FCMRemoteNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bigzero.FCMNotificationHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		56DE309E213635CC00F1424D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B359A33FB76C52816C54966 /* Pods-FCMRemoteNotification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
 				INFOPLIST_FILE = FCMRemoteNotification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bigzero.FCMRemoteNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bigzero.FCMNotificationHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
